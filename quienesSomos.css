@@ -1,0 +1,255 @@
+html{
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inactive{
+    display: none;
+}
+header{
+    width: 100%;
+    position: absolute;
+    height: 100px;
+}
+
+
+.header-logo{
+    width: 100%;
+    height: 70px;
+    background: rgba(235, 235, 235, 0.4);
+    font-size: 20px;
+    position: absolute; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desplegable-cosos{
+    margin-top: 15%;
+    position: absolute;
+    width: 100%;
+    height: 56px;
+}
+
+.desplegabol{
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px; 
+}
+
+.ancla-desplegable{
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}    
+
+.header-logo .logo{
+    width: 160px;
+    height: 90%;
+    margin-left: 5%;
+}
+.header-logo .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.header-logo .desplegable{
+    cursor: pointer;
+    width: 40px;
+    height: 50%;
+    margin-right: 3%;
+}
+.header-logo .desplegable img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+/* MAIN */
+
+main .image{
+    width: 100%;
+    /* position: relative; */
+}
+
+.quienes-somos{
+
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+.quienes-somos .img-raya{
+    width: 250px;
+    height: 70px;
+}
+
+.quienes-somos p{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Roboto Condensed", Sans-serif;
+}
+
+.quienes-somos .img-quienes{
+    width: 100%;
+}
+
+.equipo{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .nuestro-equipo{
+    background-color: black;
+    height: 185px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Condensed", Sans-serif;
+    font-size: 20px;
+}
+
+
+
+.equipo .colabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+.equipo .colabs h2{
+    color: white;
+    font-family: "Roboto Condensed", Sans-serif;
+    font-size: 20px;  
+}
+
+.equipo .colabs img{
+    width: 100%;
+    /* margin: 8px; */
+    margin-top: 60px;
+} 
+
+.equipo .colabs p{
+    color: white;
+    font-family: "Roboto Condensed", Sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/* FOOTER */
+.copiright{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.copiright p{
+    font-size: 1.5rem;
+}
+
+
+.icons .faceloko .facebook-logo{
+    width: 60%;
+  cursor: pointer;
+}
+
+.icons .faceloko img{
+    width: 100%;
+    height: 100%;
+}
+
+.icons .ig-minita .ig-logo{
+    width: 60%; 
+    cursor: pointer;
+  }
+  
+.icons .ig-minita img{
+    width: 100%;
+    height: 100%;
+}
+
+.social-media{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.social-media .icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+    height: 50px;
+}
+
+@media screen and (min-width: 1101px) {
+    .quienes-somos{
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+        /* width: 1204px; */
+        height: 650px;
+    }
+
+    .quienes-somos p{
+        width: 50%;
+        font-size: 18px;
+    }
+    
+    .quienes-somos .img-quienes{
+        width: 50%;
+    }
+
+    .quienes-somos .img-raya{
+        display: none;
+    }
+
+    .equipo{
+        display: flex;
+    flex-direction: row;
+    }
+    .equipo .colabs {
+         margin: 8px; 
+    } 
+    .social-media{
+        display: flex;
+        justify-content: center;
+    }
+
+    .copiright p{
+        font-size: 2.5rem;
+    }
+    .header-logo{
+        height: 100px;
+    }
+    .header-logo .logo{
+        width: 200px;
+    }
+    .desplegabol{
+        height: 100px;
+    }
+  }
